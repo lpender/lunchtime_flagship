@@ -34,4 +34,8 @@
 			scrollTop: $(this.hash).offset().top
 		}, 500);
 	});
+
+  setTimeout(function() {
+    $('.hero-iphone').addClass('active');
+  });
 })();
