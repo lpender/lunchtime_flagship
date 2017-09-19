@@ -167,11 +167,12 @@ blockquote:before {
 }
 
 .learn-more {
+  display: none;
 	position: absolute;
 	left: 0;
 	bottom: 30px;
 	text-align: center;
-	font-size: 1.4em;
+	font-size: 1em;
 	width: 100%;
 
 	a {

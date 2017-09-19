@@ -15,14 +15,14 @@
 }
 
 .button.alt a {
-	background: rgba(255,255,255,0);
-	border: 2px solid rgba(255, 255, 255, 1);
-	color: #fff;
-}
-
-.button.alt a:hover {
-	background: #fff;
+  background: #981CC9;
+  border: none;
 	color: $brand-color;
+  color: white;
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
 	text-shadow: none;
 }
 

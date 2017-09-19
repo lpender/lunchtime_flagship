@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Frisco Template
-url: "https://brave-submarine.cloudvent.net"
+title: Lunchtime Labs
+url: "https://lunchtimelabs.io"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -10,9 +10,9 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: App marketing template for Jekyll.
+description: Lunchtime Labs is a New York based software development firm.
 author:
-  name:
+  name: Lee Pender
   email:
   twitter: # twitter username without the @ symbol
 social:
