@@ -32,7 +32,7 @@
 	}
 
 	.hero-text-container {
-		width: 600px;
+		width: 440px;
     max-width: 100%;
 		text-align: left;
     order: 2;
@@ -60,7 +60,6 @@
 
 .hero-iphone-container {
   overflow: hidden;
-  border-bottom: 3px solid white;
 }
 
 .hero-iphone {
@@ -69,6 +68,7 @@
   margin-top: 4em;
   width: 293px;
   position: relative;
+  box-shadow: 0 3px 0 black;
 
   .hero-iphone-inner {
     left: 18px;
