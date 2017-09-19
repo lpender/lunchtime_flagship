@@ -28,6 +28,7 @@
 		align-items: center;
 		height: 100%;
     flex-direction: column;
+    justify-content: space-evenly;
 	}
 
 	.hero-text-container {
@@ -35,7 +36,6 @@
     max-width: 100%;
 		text-align: left;
     order: 2;
-    padding-top: 2em;
 
 		h1, h2, p, .button {
 			// text-shadow: 1px 1px 1px rgba(0,0,0,.8);
