@@ -28,7 +28,7 @@
 		align-items: center;
 		height: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 	}
 
 	.hero-text-container {
@@ -36,6 +36,7 @@
     max-width: 100%;
 		text-align: left;
     order: 2;
+    padding-bottom: 2em;
 
     @media #{$tablet} {
       margin-top: -5em;
@@ -66,6 +67,7 @@
 
 .hero-iphone-container {
   overflow: hidden;
+  padding-top: 1em;
 }
 
 .hero-iphone {
