@@ -15,15 +15,20 @@
 }
 
 .button.alt a {
-  background: #981CC9;
-  border: none;
 	color: $brand-color;
-  color: white;
-  display: block;
-  text-align: center;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-family: Helvetica Neue;
 	text-shadow: none;
+  background: white;
+  border: none;
+  display: block;
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-align: center;
+
+  @media #{$tablet} {
+    display: inline-block;
+  }
 }
 
 textarea, input, button, select { font-family: inherit; font-size: inherit; }

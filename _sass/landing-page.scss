@@ -3,7 +3,7 @@
 	text-align: center;
 	height: 100vh;
 	min-height: 550px;
-	background-color: #0c9e71;
+	background-color: $brand-color;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -36,6 +36,10 @@
     max-width: 100%;
 		text-align: left;
     order: 2;
+
+    @media #{$tablet} {
+      margin-top: -5em;
+    }
 
 		h1, h2, p, .button {
 			// text-shadow: 1px 1px 1px rgba(0,0,0,.8);
