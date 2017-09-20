@@ -47,7 +47,7 @@
     index++;
     $items.removeClass('active');
     $($items[index%length]).addClass('active');
-  }, 5000);
+  }, 3000);
 
 
 })();
