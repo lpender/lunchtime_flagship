@@ -220,3 +220,24 @@ blockquote:before {
 .cms-editor-active .editor-link {
 	display: block;
 }
+
+.only-one {
+  height: 45px;
+  position: relative;
+
+  > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    transition: 0.5s all;
+
+    &.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0%, 0);
+      transform: translate3d(0, 0%, 0);
+    }
+  }
+}

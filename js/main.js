@@ -38,4 +38,16 @@
   setTimeout(function() {
     $('.hero-iphone').addClass('active');
   });
+
+  let index = 0;
+  let $items = $('.only-one > span');
+  let length = $items.length
+
+  setInterval( () => {
+    index++;
+    $items.removeClass('active');
+    $($items[index%length]).addClass('active');
+  }, 5000);
+
+
 })();

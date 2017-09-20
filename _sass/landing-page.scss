@@ -48,9 +48,16 @@
 
     h1 {
       // text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+      letter-spacing: 2px;
       font-size: 2em;
       font-weight: 600;
       margin-bottom: 0.5em;
+      text-align: center;
+
+    }
+
+    .hero-text-container__header {
+      line-height: 2;
     }
 
     p {
