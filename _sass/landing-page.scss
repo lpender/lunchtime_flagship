@@ -32,14 +32,14 @@
 	}
 
 	.hero-text-container {
-		width: 440px;
+		width: 320px;
     max-width: 100%;
 		text-align: left;
     order: 2;
     padding-bottom: 2em;
 
     @media #{$tablet} {
-      margin-top: -5em;
+      margin-top: -6em;
     }
 
 		h1, h2, p, .button {
