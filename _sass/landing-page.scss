@@ -7,7 +7,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-  // background-image: none !important;
+  background-image: none !important;
 
 	&:before {
 		content: "";
@@ -27,7 +27,6 @@
 		align-items: center;
 		display: flex;
 		height: 100%;
-    background: rgba(12, 158, 113, 0.5);
     flex-direction: column;
     justify-content: space-around;
     max-width: none;

@@ -1,6 +1,8 @@
-- name: Blog
-  link: /blog/
-- name: About
-  link: /about/
-- name: Contact
-  link: /contact/
+- name: Why?
+  link: '#why'
+- name: How?
+  link: '#how'
+- name: Clients
+  link: '#clients'
+- name: 🖐
+  link: '#hi'

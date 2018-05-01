@@ -1,10 +1,12 @@
 left_links:
-  - name: Blog
-    link: /blog/
-  - name: About
-    link: /about/
-  - name: Contact
-    link: /contact/
+  - name: Why?
+    link: '#why'
+  - name: How?
+    link: '#how'
+  - name: Results?
+    link: '#results'
+  - name: 🖐
+    link: '#hi'
 right_links:
   - name:
     link: https://facebook.com/

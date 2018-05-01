@@ -31,15 +31,31 @@ header {
 	width: 100%;
 	z-index: 9999;
 	line-height: 0;
+  transition: 0.2s background, 0.2s color;
 
 	.container {
 		line-height: 0;
+    height: 31px;
+    overflow: hidden;
+    transition: 0.2s height ease;
+
+    .nav-open & {
+      height: 287px;
+    }
 	}
 
+  @media #{$mid-point} {
+    .container {
+      .nav-open & {
+        height: 31px;
+      }
+    }
+  }
+
 	&.header-background {
-		background-color: rgba(255,255,255,.95);
+		background-color: rgba(255,255,255,1);
 		color: #333;
-		box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+		box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
 		transition: background-color 0.2s ease;
 		text-shadow: none;
 
@@ -102,11 +118,8 @@ header {
 }
 
 .info {
-	padding: 0 0 100px 0;
+	padding: 30px 0 30px 0;
 
-	&:first-child {
-		padding-top: 100px;
-	}
 }
 
 .subtext {
