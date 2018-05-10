@@ -24,15 +24,23 @@
 	document.getElementById("open-nav").addEventListener("click", function (event) {
 		event.preventDefault();
 		document.body.classList.toggle("nav-open");
-		changeHeader();
+    if (document.body.classList.contains('nav-open')) {
+      changeHeader();
+    } else {
+      setTimeout(function() {
+        changeHeader();
+      }, 200);
+    }
 	});
 
 	$("a[href*=\\#]").on("click", function (event) {
-		event.preventDefault();
+		// event.preventDefault();
 
 		$("html, body").animate({
-			scrollTop: $(this.hash).offset().top
+			scrollTop: $(this.hash).offset().top-60
 		}, 500);
+
+		document.body.classList.remove("nav-open");
 	});
 
   setTimeout(function() {
