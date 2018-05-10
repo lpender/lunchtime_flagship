@@ -1,3 +1,8 @@
+.headshot {
+  width: 33%;
+  display: inline;
+}
+
 .container, .text-container {
 	margin: 0 auto;
 	position: relative;
@@ -113,13 +118,12 @@ header {
 	background: #fff;
 }
 
-.info img {
+.info .image {
 		max-height: 650px;
 }
 
 .info {
 	padding: 30px 0 30px 0;
-
 }
 
 .subtext {
@@ -252,5 +256,18 @@ blockquote:before {
       -webkit-transform: translate3d(0, 0%, 0);
       transform: translate3d(0, 0%, 0);
     }
+  }
+}
+
+.clients {
+  text-align: center;
+
+  > img {
+    display: block;
+  }
+
+  .flex {
+    flex-flow: wrap;
+    flex-direction: column;
   }
 }
