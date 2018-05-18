@@ -4,7 +4,7 @@
 title: Lunchtime Labs
 url: "https://lunchtimelabs.io"
 baseurl:
-google_analytics_key:
+google_analytics_key: "UA-80055617-1"
 google_maps_javascript_api_key:
 disqus_shortname:
 
@@ -12,13 +12,10 @@ disqus_shortname:
 logo: /siteicon.png
 description: Lunchtime Labs is a New York based software development firm.
 author:
-  name: Lee Pender
-  email:
-  twitter: # twitter username without the @ symbol
-social:
-  name: Frisco Template
-  links:
-    - https://github.com/CloudCannon/frisco-jekyll-template
+  twitter: lunchtimelabs
+twitter:
+  card: summary
+  username: lunchtimelabs
 
 # -----
 # Build
