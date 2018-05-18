@@ -1,12 +1,12 @@
 footer {
-	font-size: .6em;
+	font-size: .85em;
 	position: relative;
-	background: #2b2b40;
-	color: #fff;
+  background-color: #fff;
+	color: black;
 
 	&,
 	a {
-		color: #999;
+		color: #fff;
 	}
 
 	a {
@@ -92,7 +92,7 @@ footer {
 	float: right;
 
 	a {
-		color: #999;
+		color: #fff;
 	}
 
 	@media #{$desktop} {

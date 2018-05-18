@@ -1,22 +1,22 @@
 .button a, input[type=submit] {
 	color: $brand-color;
 	text-decoration: none;
-	border: 2px solid $brand-color;
 	transition: .2s ease-in-out;
 	display: inline-block;
 	padding: 16px 50px;
 	background: #fff;
-}
 
-.button a:hover, input[type=submit]:hover {
-	background: $brand-color;
-	color: #fff;
-	cursor: pointer;
+  &:hover {
+    background: $brand-color;
+    color: #fff;
+    border: 1px solid $brand-color;
+    cursor: pointer;
+  }
 }
 
 .button.alt a {
 	color: $brand-color;
-  font-family: Helvetica Neue;
+	font-family: Helvetica Neue, sans-serif;
 	text-shadow: none;
   background: white;
   border: none;
@@ -28,6 +28,12 @@
 
   @media #{$tablet} {
     // display: inline-block;
+  }
+
+  &:hover {
+    background: $brand-color;
+    color: #fff;
+    cursor: pointer;
   }
 }
 
@@ -67,6 +73,6 @@ input, textarea {
 }
 
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
-	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-	border: 1px solid rgba(81, 203, 238, 1);
+	box-shadow: 0 0 5px $brand-color;
+	border: 1px solid $brand-color;
 }
