@@ -1,6 +1,38 @@
 .headshot {
-  width: 33%;
-  display: inline;
+  box-sizing: border-box;
+  padding: 0 3px;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 3em;
+  cursor: pointer;
+
+  @media #{$desktop} {
+    width: 33%;
+    display: inline;
+  }
+}
+
+.headshot__text {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 5px;
+  opacity: 0;
+  font-size: 1.5em;
+  font-family: "Lato";
+  transition: opacity 0.2s;
+  color: $brand-color;
+
+  .headshot:hover & {
+    opacity: 1;
+  }
 }
 
 .container, .text-container {
@@ -262,7 +294,8 @@ blockquote:before {
 .clients {
   text-align: center;
 
-  > img {
+  img {
+    margin-top: 1em;
     display: block;
   }
 
