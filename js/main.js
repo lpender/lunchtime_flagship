@@ -43,9 +43,11 @@
 		document.body.classList.remove("nav-open");
 	});
 
-  setTimeout(function() {
+  image = new Image();
+  image.src = "images/iphone.png";
+  image.onload = function() {
     $('.hero-iphone').addClass('active');
-  });
+  };
 
   let index = 0;
   let $items = $('.only-one > span');
