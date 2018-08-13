@@ -1,8 +1,8 @@
 .hero {
-	color: white;
-	text-align: center;
-	height: 100vh;
-	min-height: 550px;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  min-height: 550px;
   /* http://colorzilla.com/gradient-editor/#49c6e3+0,4efce5+100 */
   background: $brand-color;
   // background: -moz-linear-gradient(-45deg, $brand-color 0%, $brand-secondary-color 100%);
@@ -10,32 +10,32 @@
   // background: linear-gradient(135deg, $brand-color 0%,$brand-secondary-color, 100%);
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#{$brand-color}", endColorstr="#{$brand-secondary-color}",GradientType=1 );
 
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 300px;
-}
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+  }
 
-	p {
-		color: #fff;
-	}
+  p {
+    color: #fff;
+  }
 
-	.inner-hero {
-		align-items: center;
-		display: flex;
-		height: 100%;
+  .inner-hero {
+    align-items: center;
+    display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     max-width: none;
-	}
+  }
 
-	.hero-text-container {
-		width: 320px;
+  .hero-text-container {
+    width: 320px;
     max-width: 100%;
-		text-align: left;
+    text-align: left;
     order: 2;
     padding-bottom: 2em;
 
@@ -43,9 +43,12 @@
       margin-top: 2em;
     }
 
-		h1, h2, p, .button {
-			// text-shadow: 1px 1px 1px rgba(0,0,0,.8);
-		}
+    h1,
+    h2,
+    p,
+    .button {
+      // text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+    }
 
     h1 {
       // text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
@@ -54,7 +57,6 @@
       font-weight: 600;
       margin-bottom: 0.5em;
       text-align: center;
-
     }
 
     .hero-text-container__header {
@@ -65,12 +67,12 @@
       font-size: 1em;
       line-height: 1.5;
     }
-	}
+  }
 
-	.hero-text-right {
-		position: absolute;
-		right: 0;
-	}
+  .hero-text-right {
+    position: absolute;
+    right: 0;
+  }
 }
 
 .hero-iphone-container {
@@ -80,16 +82,15 @@
 
 .hero-iphone {
   background-image: url('../images/iphone.png');
-  height: 36vh;
+  height: 0vh;
   margin-top: 2em;
   width: 293px;
   position: relative;
   box-shadow: 0 3px 0 black;
-  transform: translateY(100%);
-  transition: transform 0.7s ease-in-out;
+  transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* easeOutBack */
 
   &.active {
-    transform: translateY(0);
+    height: 36vh;
   }
 
   .hero-iphone-inner {
@@ -99,7 +100,6 @@
     width: 260px;
   }
 }
-
 
 .image {
   display: flex;
@@ -115,29 +115,30 @@
 }
 
 .bottom-cta {
-	text-align: center;
+  text-align: center;
 
-	h2 {
-		margin-bottom: 12px;
-	}
+  h2 {
+    margin-bottom: 12px;
+  }
 }
 
 @media #{$desktop} {
-	.flex {
-		@include flexbox;
-		align-items: center;
-		flex-direction: row;
+  .flex {
+    @include flexbox;
+    align-items: center;
+    flex-direction: row;
 
-		.text, .image {
-			-webkit-flex: 1;
-			flex: 1;
-			padding: 0 20px;
-		}
-	}
+    .text,
+    .image {
+      -webkit-flex: 1;
+      flex: 1;
+      padding: 0 20px;
+    }
+  }
 
-	.content section:nth-child(even) .flex {
-		flex-direction: row-reverse;
-	}
+  .content section:nth-child(even) .flex {
+    flex-direction: row-reverse;
+  }
 }
 
 #hi {
