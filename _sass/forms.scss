@@ -1,32 +1,41 @@
-.button a, input[type=submit] {
-	color: $brand-color;
-	text-decoration: none;
-	transition: .2s ease-in-out;
-	display: inline-block;
-	padding: 16px 50px;
-	background: #fff;
-  -webkit-border-radius:0;
-  border-radius:0;
+.button a,
+input[type='submit'] {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+  background: #eee;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  width: auto;
+  text-align: center;
 
   &:hover {
     background: $brand-color;
+    border: none;
     color: #fff;
-    border: 1px solid $brand-color;
     cursor: pointer;
   }
 }
 
-.button.alt a {
-	color: $brand-color;
-	font-family: Helvetica Neue, sans-serif;
-	text-shadow: none;
-  background: white;
+.button a.alt,
+input[type='submit'] {
+  background: $brand-secondary-color;
   border: none;
+  color: white;
   display: block;
-  font-weight: 600;
+  // font-family: Helvetica Neue, sans-serif;
   font-size: 1em;
+  font-weight: 400;
   letter-spacing: 2px;
-  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: none;
+
+  &:hover {
+    background: $brand-secondary-color;
+  }
 
   @media #{$tablet} {
     // display: inline-block;
@@ -39,42 +48,59 @@
   }
 }
 
-textarea, input, button, select { font-family: inherit; font-size: inherit; }
-
-input[type=submit] {
-	margin: 20px 0 0 0;
+.cta.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-label, input, textarea {
-	display: block;
-	width: 100%;
-	box-sizing: border-box;
+textarea,
+input,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input[type='submit'] {
+  margin: 40px auto;
+}
+
+label,
+input,
+textarea {
+  box-sizing: border-box;
+  display: block;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
 }
 
 textarea {
-	resize: vertical;
-	height: 150px;
+  resize: vertical;
+  height: 150px;
 }
 
 label {
-	margin: 20px 0 5px 0;
+  margin: 20px 0 5px 0;
 }
 
-input, textarea {
-	padding: 10px;
-	font-size: 1em;
+input,
+textarea {
+  padding: 10px;
+  font-size: 1em;
 }
 
-input, textarea {
-	-webkit-transition: all 0.30s ease-in-out;
-	-moz-transition: all 0.30s ease-in-out;
-	-ms-transition: all 0.30s ease-in-out;
-	-o-transition: all 0.30s ease-in-out;
-	outline: none;
-	border: 1px solid #DDDDDD;
+input,
+textarea {
+  outline: none;
+  border: 1px solid #dddddd;
 }
 
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
-	box-shadow: 0 0 5px $brand-color;
-	border: 1px solid $brand-color;
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+textarea:focus {
+  box-shadow: 0 0 5px $brand-color;
+  border: 1px solid $brand-color;
 }

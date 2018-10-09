@@ -1,3 +1,21 @@
+.fixed-image-container {
+  overflow: hidden;
+  perspective: 3px;
+}
+
+.fixed-image {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  transform: translateZ(-1px) scale(1.5);
+  z-index: -1;
+}
+
+.content {
+  overflow: hidden;
+}
+
 .hero {
   color: white;
   text-align: center;
@@ -9,15 +27,7 @@
   // background: -webkit-linear-gradient(-45deg, $brand-color 0%,$brand-secondary-color 100%);
   // background: linear-gradient(135deg, $brand-color 0%,$brand-secondary-color, 100%);
   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#{$brand-color}", endColorstr="#{$brand-secondary-color}",GradientType=1 );
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 300px;
-  }
+  background-position: contain;
 
   p {
     color: #fff;
@@ -26,10 +36,12 @@
   .inner-hero {
     align-items: center;
     display: flex;
-    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
     flex-direction: column;
+    height: 100%;
     justify-content: center;
     max-width: none;
+    transform: translateY(-100vh);
   }
 
   .hero-text-container {
@@ -105,6 +117,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 1em;
 }
 
 .image-actual {
@@ -126,7 +139,7 @@
   .flex {
     @include flexbox;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 
     .text,
     .image {
@@ -138,6 +151,34 @@
 
   .content section:nth-child(even) .flex {
     flex-direction: row-reverse;
+  }
+}
+
+.clients {
+  img {
+    margin: auto;
+    margin-top: 3em;
+    display: block;
+    width: 400px;
+  }
+
+  .flex {
+    flex-flow: wrap;
+    flex-direction: column;
+  }
+}
+
+.client-list {
+  margin-top: 8vh;
+}
+
+.headshots {
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet} {
+    flex-direction: row;
   }
 }
 
