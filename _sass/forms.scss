@@ -1,19 +1,20 @@
 .button a,
 input[type='submit'] {
-  color: black;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1em;
-  background: #eee;
   -webkit-border-radius: 0;
+  background: transparent;
   border-radius: 0;
   border: none;
-  width: auto;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 1em;
   text-align: center;
+  text-decoration: none;
+  width: auto;
 
   &:hover {
-    background: $brand-color;
+    // background: $brand-color;
     border: none;
     color: #fff;
     cursor: pointer;
