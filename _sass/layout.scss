@@ -162,7 +162,8 @@ header {
 }
 
 .subtext {
-  margin-top: 10px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   max-width: none;
 }
 
@@ -273,7 +274,7 @@ blockquote:before {
 }
 
 .only-one {
-  height: 45px;
+  height: 35px;
   position: relative;
 
   > span {

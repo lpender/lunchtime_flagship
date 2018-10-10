@@ -4,12 +4,15 @@
 }
 
 .fixed-image {
-  background-attachment: fixed;
   background-position: center center;
   background-size: cover;
   height: 100vh;
   transform: translateZ(-1px) scale(1.5);
   z-index: -1;
+}
+
+.desktop .fixed-image {
+  background-attachment: fixed;
 }
 
 .content {
@@ -30,10 +33,12 @@
 
   .inner-hero {
     align-items: center;
-    display: flex;
     background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    display: flex;
     flex-direction: column;
     height: 100%;
+    padding-bottom: 60px;
     justify-content: center;
     max-width: none;
     transform: translateY(-100vh);
@@ -60,15 +65,15 @@
     h1 {
       // text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
       letter-spacing: 2px;
-      font-size: 2em;
+      font-size: 1.75em;
       font-weight: 600;
-      margin-bottom: 0.5em;
-      margin-top: 2.5vh;
+      margin-bottom: 0.5vh;
+      margin-top: 1vh;
       text-align: center;
     }
 
     .hero-text-container__header {
-      line-height: 2;
+      line-height: 1.75;
     }
 
     p {
@@ -91,14 +96,14 @@
 .hero-iphone {
   background-image: url('../images/iphone.png');
   height: 0vh;
-  margin-top: 2em;
+  margin-top: 7.5vh;
   width: 293px;
   position: relative;
   box-shadow: 0 3px 0 black;
   transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* easeOutBack */
 
   &.active {
-    height: 36vh;
+    height: 30vh;
   }
 
   .hero-iphone-inner {
