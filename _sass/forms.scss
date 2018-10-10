@@ -15,7 +15,7 @@ input[type='submit'] {
 
   &:hover {
     // background: $brand-color;
-    border: none;
+    // border: none;
     color: #fff;
     cursor: pointer;
   }
@@ -33,16 +33,12 @@ input[type='submit'] {
   margin-bottom: 15px;
   text-shadow: none;
 
-  &:hover {
-    background: $brand-secondary-color;
-  }
-
   @media #{$tablet} {
     // display: inline-block;
   }
 
   &:hover {
-    background: $brand-color;
+    background: $brand-secondary-color;
     color: #fff;
     cursor: pointer;
   }
