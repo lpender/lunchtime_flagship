@@ -17,29 +17,11 @@
 }
 
 .hero {
+  @include background;
   color: white;
   text-align: center;
   height: 100vh;
   min-height: 550px;
-  /* http://colorzilla.com/gradient-editor/#49c6e3+0,4efce5+100 */
-  // background: $brand-color;
-  background: -moz-linear-gradient(
-    -45deg,
-    $brand-color 0%,
-    $brand-secondary-color 100%
-  );
-  background: -webkit-linear-gradient(
-    -45deg,
-    $brand-color 0%,
-    $brand-secondary-color 100%
-  );
-  background: linear-gradient(
-    135deg,
-    $brand-color 0%,
-    $brand-secondary-color,
-    100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#{$brand-color}", endColorstr="#{$brand-secondary-color}",GradientType=1 );
   background-position: contain;
 
   p {
@@ -184,6 +166,7 @@
 
 .client-list {
   margin-top: 8vh;
+  padding: 0 3em;
 }
 
 .headshots {
